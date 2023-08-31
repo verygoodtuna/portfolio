@@ -1,3 +1,7 @@
+.section {
+    background: $color-main;
+}
+
 .main_home {
     &::before {
         content: ""; 
@@ -33,6 +37,7 @@
                 font-size: 50px;
                 line-height: 50px;
                 font-weight: 500;
+                font-family: 'Marck Script', cursive;
             }
         }
 
@@ -44,7 +49,8 @@
     }
 }
 
-.main_sajo {
+.main_stone {
+    position: relative;
 
    &::before {
         content: ""; 
@@ -58,72 +64,78 @@
         border: 1px solid $color-white;
     }
 
-
     .inner {
         @include position_center();
         width: 100%;
-        position: relative;
-
-        .pc_img {
-            width: 650px;
-            height: 540px;
-            overflow: hidden;
-    
-            background: url(../imges/bluestone.png)no-repeat top center/cover;
-            border-radius: 10px;
-
+        
+        .pc {
+            
             position: absolute;
             top: 50%;
-            left: 20%;
+            right: 10%;
             transform: translate(0, -50%);
+            border: 15px solid #fff;
+            border-radius: 10px;
+
+            
     
-            &:hover {
-                animation: scrolldown 5s linear forwards;
-            }
+            .pc_img {
+                width: 650px;
+                height: 540px;
+                overflow: hidden;
+        
+                background: url(../imges/bluestone.png)no-repeat top center/cover;
     
-            // &::before {
-            //     content: "";
-            //     position: absolute;
-            //     top: 50%;
-            //     left: 50%;
-            //     transform: translate(-50%, -50%);
-    
-            //     width: 670px;
-            //     height: 560px;
-            //     background: $color-white;
-            //     border-radius: 20px;
-    
-            //     z-index: -1;
-            // }
-    
-            @keyframes scrolldown {
-                0% {
-                    background-position: top;
+                &:hover {
+                    animation: scrolldown 5s linear forwards;
                 }
-    
-                100% {
-                    background-position: bottom;
+        
+                // &::before {
+                //     content: "";
+                //     position: absolute;
+                //     top: 50%;
+                //     left: 50%;
+                //     transform: translate(-50%, -50%);
+        
+                //     width: 670px;
+                //     height: 560px;
+                //     background: $color-white;
+                //     border-radius: 20px;
+        
+                //     z-index: -1;
+                // }
+        
+                @keyframes scrolldown {
+                    0% {
+                        background-position: top;
+                    }
+        
+                    100% {
+                        background-position: bottom;
+                    }
                 }
             }
         }
-    
-        .moblie_img {
-            width: 240px;
-            height: 300px;
-            overflow: hidden;
-    
-            background: url(../imges/bluestone_moblie.png)no-repeat top center/cover;
-            border-radius: 10px;
+        .moblie {
 
             position: absolute;
-            top: 50%;
-            left: 25%;
-            transform: translate(0, -50%);
-    
-            &:hover {
-                animation: scrolldown 8s linear forwards;
+            top: 100%;
+            right: 45%;
+            //transform: translate(0, -50%);
+            border: 10px solid #fff;
+            border-radius: 10px;
+        
+            .moblie_img {
+                width: 240px;
+                height: 300px;
+                overflow: hidden;
+        
+                background: url(../imges/bluestone_moblie.png)no-repeat top center/cover;
+        
+                &:hover {
+                    animation: scrolldown 8s linear forwards;
+                }
             }
-        }
+        }    
     }
-    
 }

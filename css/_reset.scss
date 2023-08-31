@@ -33,7 +33,10 @@ img {
 }
 
 .inner {
-    @include inner();
+    @include position_center();
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .blind {
@@ -43,8 +46,4 @@ img {
     height: 1px;
     margin: -1px;
     overflow: hidden;
-}
-
-.section {
-    height: 100vh;
 }
