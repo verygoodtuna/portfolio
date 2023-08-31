@@ -1,0 +1,129 @@
+.main_home {
+    &::before {
+        content: ""; 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(100% - 5%);
+        height: calc(100% - 10%);
+        background: transparent;
+        border: 1px solid $color-white;
+    }
+
+    .inner {
+        @include position_center();
+
+        .tit {
+            text-align: center;
+            z-index: 998;
+            color: #222;
+            font-family: 'Marck Script', cursive;
+
+            h1 {
+                font-size: 120px;
+                font-weight: 400;
+                line-height: 100px;
+                margin: 0 0 60px 0;
+                font-family: 'Marck Script', cursive;
+                //font-family: 'Nanum Pen Script', cursive;
+            }
+
+            p {
+                font-size: 50px;
+                line-height: 50px;
+                font-weight: 500;
+            }
+        }
+
+        figure {
+            @include position_center();
+            top: 30%;
+            z-index: -1;
+        }
+    }
+}
+
+.main_sajo {
+
+   &::before {
+        content: ""; 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(100% - 5%);
+        height: calc(100% - 10%);
+        background: transparent;
+        border: 1px solid $color-white;
+    }
+
+
+    .inner {
+        @include position_center();
+        width: 100%;
+        position: relative;
+
+        .pc_img {
+            width: 650px;
+            height: 540px;
+            overflow: hidden;
+    
+            background: url(../imges/bluestone.png)no-repeat top center/cover;
+            border-radius: 10px;
+
+            position: absolute;
+            top: 50%;
+            left: 20%;
+            transform: translate(0, -50%);
+    
+            &:hover {
+                animation: scrolldown 5s linear forwards;
+            }
+    
+            // &::before {
+            //     content: "";
+            //     position: absolute;
+            //     top: 50%;
+            //     left: 50%;
+            //     transform: translate(-50%, -50%);
+    
+            //     width: 670px;
+            //     height: 560px;
+            //     background: $color-white;
+            //     border-radius: 20px;
+    
+            //     z-index: -1;
+            // }
+    
+            @keyframes scrolldown {
+                0% {
+                    background-position: top;
+                }
+    
+                100% {
+                    background-position: bottom;
+                }
+            }
+        }
+    
+        .moblie_img {
+            width: 240px;
+            height: 300px;
+            overflow: hidden;
+    
+            background: url(../imges/bluestone_moblie.png)no-repeat top center/cover;
+            border-radius: 10px;
+
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            transform: translate(0, -50%);
+    
+            &:hover {
+                animation: scrolldown 8s linear forwards;
+            }
+        }
+    }
+    
+}
