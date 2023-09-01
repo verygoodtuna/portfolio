@@ -99,6 +99,207 @@ img {
   z-index: -1;
 }
 
+.main_moving {
+  position: relative;
+}
+.main_moving::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 90%;
+  background: transparent;
+  border: 1px solid #ffffff;
+}
+.main_moving .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.main_moving .inner .pc {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(0, -50%);
+  border: 15px solid #fff;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.main_moving .inner .pc:hover {
+  z-index: 999;
+}
+.main_moving .inner .pc .pc_img {
+  width: 650px;
+  height: 540px;
+  overflow: hidden;
+  background: url(../imges/movingegg.png) no-repeat top center/cover;
+}
+.main_moving .inner .pc .pc_img:hover {
+  animation: scrolldown 5s linear forwards;
+}
+@keyframes scrolldown {
+  0% {
+    background-position: top;
+  }
+  100% {
+    background-position: bottom;
+  }
+}
+.main_moving .inner .moblie {
+  position: absolute;
+  top: 100%;
+  right: 45%;
+  border: 10px solid #fff;
+  border-radius: 10px;
+}
+.main_moving .inner .moblie .moblie_img {
+  width: 240px;
+  height: 300px;
+  overflow: hidden;
+  background: url(../imges/bluestone_moblie.png) no-repeat top center/cover;
+}
+.main_moving .inner .moblie .moblie_img:hover {
+  animation: scrolldown 8s linear forwards;
+}
+
+.main_sajo {
+  position: relative;
+}
+.main_sajo::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 90%;
+  background: transparent;
+  border: 1px solid #ffffff;
+}
+.main_sajo .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.main_sajo .inner .pc {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(0, -50%);
+  border: 15px solid #fff;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.main_sajo .inner .pc:hover {
+  z-index: 999;
+}
+.main_sajo .inner .pc .pc_img {
+  width: 650px;
+  height: 540px;
+  overflow: hidden;
+  background: url(../imges/movingegg.png) no-repeat top center/cover;
+}
+.main_sajo .inner .pc .pc_img:hover {
+  animation: scrolldown 5s linear forwards;
+}
+@keyframes scrolldown {
+  0% {
+    background-position: top;
+  }
+  100% {
+    background-position: bottom;
+  }
+}
+.main_sajo .inner .moblie {
+  position: absolute;
+  top: 100%;
+  right: 45%;
+  border: 10px solid #fff;
+  border-radius: 10px;
+}
+.main_sajo .inner .moblie .moblie_img {
+  width: 240px;
+  height: 300px;
+  overflow: hidden;
+  background: url(../imges/bluestone_moblie.png) no-repeat top center/cover;
+}
+.main_sajo .inner .moblie .moblie_img:hover {
+  animation: scrolldown 8s linear forwards;
+}
+
+.main_shinil {
+  position: relative;
+}
+.main_shinil::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 90%;
+  background: transparent;
+  border: 1px solid #ffffff;
+}
+.main_shinil .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.main_shinil .inner .pc {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(0, -50%);
+  border: 15px solid #fff;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.main_shinil .inner .pc:hover {
+  z-index: 999;
+}
+.main_shinil .inner .pc .pc_img {
+  width: 650px;
+  height: 540px;
+  overflow: hidden;
+  background: url(../imges/movingegg.png) no-repeat top center/cover;
+}
+.main_shinil .inner .pc .pc_img:hover {
+  animation: scrolldown 5s linear forwards;
+}
+@keyframes scrolldown {
+  0% {
+    background-position: top;
+  }
+  100% {
+    background-position: bottom;
+  }
+}
+.main_shinil .inner .moblie {
+  position: absolute;
+  top: 100%;
+  right: 45%;
+  border: 10px solid #fff;
+  border-radius: 10px;
+}
+.main_shinil .inner .moblie .moblie_img {
+  width: 240px;
+  height: 300px;
+  overflow: hidden;
+  background: url(../imges/bluestone_moblie.png) no-repeat top center/cover;
+}
+.main_shinil .inner .moblie .moblie_img:hover {
+  animation: scrolldown 8s linear forwards;
+}
+
 .main_stone {
   position: relative;
 }
@@ -127,6 +328,10 @@ img {
   transform: translate(0, -50%);
   border: 15px solid #fff;
   border-radius: 10px;
+  transition: 0.5s;
+}
+.main_stone .inner .pc:hover {
+  z-index: 999;
 }
 .main_stone .inner .pc .pc_img {
   width: 650px;
@@ -159,5 +364,72 @@ img {
   background: url(../imges/bluestone_moblie.png) no-repeat top center/cover;
 }
 .main_stone .inner .moblie .moblie_img:hover {
+  animation: scrolldown 8s linear forwards;
+}
+
+.main_sk {
+  position: relative;
+}
+.main_sk::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 90%;
+  background: transparent;
+  border: 1px solid #ffffff;
+}
+.main_sk .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.main_sk .inner .pc {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(0, -50%);
+  border: 15px solid #fff;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.main_sk .inner .pc:hover {
+  z-index: 999;
+}
+.main_sk .inner .pc .pc_img {
+  width: 650px;
+  height: 540px;
+  overflow: hidden;
+  background: url(../imges/movingegg.png) no-repeat top center/cover;
+}
+.main_sk .inner .pc .pc_img:hover {
+  animation: scrolldown 5s linear forwards;
+}
+@keyframes scrolldown {
+  0% {
+    background-position: top;
+  }
+  100% {
+    background-position: bottom;
+  }
+}
+.main_sk .inner .moblie {
+  position: absolute;
+  top: 100%;
+  right: 45%;
+  border: 10px solid #fff;
+  border-radius: 10px;
+}
+.main_sk .inner .moblie .moblie_img {
+  width: 240px;
+  height: 300px;
+  overflow: hidden;
+  background: url(../imges/bluestone_moblie.png) no-repeat top center/cover;
+}
+.main_sk .inner .moblie .moblie_img:hover {
   animation: scrolldown 8s linear forwards;
 }/*# sourceMappingURL=kimjiwon.css.map */
