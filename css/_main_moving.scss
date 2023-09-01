@@ -16,6 +16,34 @@
     .inner {
         @include position_center();
         width: 100%;
+
+        .main_color {
+
+            li:nth-child(1)::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: #995f35;
+            }
+
+            li:nth-child(2)::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: #f7b83d;
+            }
+        }
+        
         
         .pc {
             
@@ -27,8 +55,9 @@
             top: 50%;
             right: 10%;
             transform: translate(0, -50%);
-            border: 15px solid #fff;
-            border-radius: 10px;
+            border: 15px solid #111;
+            background: #111;
+            border-radius: 20px;
             transition: 0.5s;
 
             
@@ -37,11 +66,12 @@
                 width: 650px;
                 height: 540px;
                 overflow: hidden;
+                border-radius: 10px;
         
                 background: url(../imges/movingegg.png)no-repeat top center/cover;
     
                 &:hover {
-                    animation: scrolldown 5s linear forwards;
+                    animation: scrolldown 1s linear forwards;
                 }
                         
                 @keyframes scrolldown {
@@ -58,21 +88,23 @@
         .moblie {
 
             position: absolute;
-            top: 100%;
+            top: 50%;
             right: 45%;
             //transform: translate(0, -50%);
-            border: 10px solid #fff;
-            border-radius: 10px;
+            border: 10px solid #111;
+            background: #111;
+            border-radius: 20px;
         
             .moblie_img {
                 width: 240px;
                 height: 300px;
                 overflow: hidden;
+                border-radius: 10px;
         
-                background: url(../imges/bluestone_moblie.png)no-repeat top center/cover;
+                background: url(../imges/movingegg_moblie.png)no-repeat top center/cover;
         
                 &:hover {
-                    animation: scrolldown 8s linear forwards;
+                    animation: scrolldown 5s linear forwards;
                 }
             }
         }    

@@ -2,6 +2,43 @@
     background: $color-main;
 }
 
+.txt {
+    padding: 0 0 0 100px;
+    h2 {
+        font-size: 50px;
+        font-weight: 500;
+        margin: 0 0 16px 0;
+        color: #222;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0 0 16px 0;
+        color: #414141;
+    }
+
+    .me {
+        margin: 0 0 16px 0;
+        li {
+            font-size: 16px;
+            font-weight: 400;
+            color: #414141;
+            line-height: 24px;
+        }
+    }
+
+    .main_color {
+        display: flex;
+        gap: 12px;
+
+        li {
+            color: transparent;
+            position: relative;
+        }
+    }
+}
+
 .main_home {
     &::before {
         content: ""; 

@@ -16,6 +16,43 @@
     .inner {
         @include position_center();
         width: 100%;
+
+        .main_color {
+
+            li:nth-child(1)::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: #035ac7;
+            }
+            li:nth-child(2)::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: #01babd;
+            }
+            li:nth-child(3)::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: #f2c81f;
+            }
+        }
         
         .pc {
             
@@ -27,8 +64,9 @@
             top: 50%;
             right: 10%;
             transform: translate(0, -50%);
-            border: 15px solid #fff;
-            border-radius: 10px;
+            border: 15px solid #111;
+            background: #111;
+            border-radius: 20px;
             transition: 0.5s;
 
             
@@ -37,20 +75,25 @@
                 width: 650px;
                 height: 540px;
                 overflow: hidden;
+                border-radius: 10px;
         
                 background: url(../imges/bluestone.png)no-repeat top center/cover;
     
                 &:hover {
-                    animation: scrolldown 5s linear forwards;
+                    animation: scrolldown 5s linear infinite;
                 }
                         
                 @keyframes scrolldown {
                     0% {
-                        background-position: top;
+                        transform: translateY(0);
+                    }
+
+                    50% {
+                        transform: translateY(100%);
                     }
         
                     100% {
-                        background-position: bottom;
+                        transform: translateY(0);
                     }
                 }
             }
@@ -58,16 +101,18 @@
         .moblie {
 
             position: absolute;
-            top: 100%;
+            top: 50%;
             right: 45%;
             //transform: translate(0, -50%);
-            border: 10px solid #fff;
-            border-radius: 10px;
+            border: 10px solid #111;
+            background: #111;
+            border-radius: 20px;
         
             .moblie_img {
                 width: 240px;
                 height: 300px;
                 overflow: hidden;
+                border-radius: 10px;
         
                 background: url(../imges/bluestone_moblie.png)no-repeat top center/cover;
         
