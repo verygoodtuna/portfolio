@@ -630,4 +630,109 @@ img {
 }
 .main_sk .inner .moblie .moblie_img:hover {
   animation: scrolldown 8s linear forwards;
+}
+
+.main_play {
+  position: relative;
+}
+.main_play::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 90%;
+  background: transparent;
+  border: 1px solid #ffffff;
+}
+.main_play .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+.main_play .inner .box .txt .main_color li:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #002e6a;
+}
+.main_play .inner .box .txt .main_color li:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #1864b2;
+}
+.main_play .inner .box .txt .main_color li:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #f72a66;
+}
+.main_play .inner .pc {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(0, -50%);
+  border: 15px solid #111;
+  background: #111;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.main_play .inner .pc:hover {
+  z-index: 999;
+}
+.main_play .inner .pc .pc_img {
+  width: 650px;
+  height: 540px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: url(../imges/playstation.png) no-repeat top center/cover;
+}
+.main_play .inner .pc .pc_img:hover {
+  animation: scrolldown 5s linear forwards;
+}
+@keyframes scrolldown {
+  0% {
+    background-position: top;
+  }
+  100% {
+    background-position: bottom;
+  }
+}
+.main_play .inner .moblie {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 45%;
+  border: 10px solid #111;
+  background: #111;
+  border-radius: 20px;
+}
+.main_play .inner .moblie .moblie_img {
+  width: 240px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: url(../imges/sajotuna_moblie.png) no-repeat top center/cover;
+}
+.main_play .inner .moblie .moblie_img:hover {
+  animation: scrolldown 8s linear forwards;
 }/*# sourceMappingURL=kimjiwon.css.map */
