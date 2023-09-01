@@ -81,10 +81,18 @@ img {
 .txt .main_color {
   display: flex;
   gap: 12px;
+  margin: 0 0 50px 0;
 }
 .txt .main_color li {
   color: transparent;
   position: relative;
+}
+.txt .web {
+  font-size: 14px;
+  color: #FF8E8E;
+  background: #ffffff;
+  padding: 10px 15px;
+  border-radius: 10px;
 }
 
 .main_home::before {

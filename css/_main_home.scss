@@ -31,11 +31,20 @@
     .main_color {
         display: flex;
         gap: 12px;
+        margin: 0 0 50px 0;
 
         li {
             color: transparent;
             position: relative;
         }
+    }
+
+    .web {
+        font-size: 14px;
+        color: $color-main;
+        background: $color-white;
+        padding: 10px 15px;
+        border-radius: 10px;
     }
 }
 
