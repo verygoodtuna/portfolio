@@ -45,6 +45,12 @@
         background: $color-white;
         padding: 10px 15px;
         border-radius: 10px;
+
+        transition: 0.5s;
+
+        &:hover {
+            background: #222;
+        }
     }
 }
 

@@ -93,6 +93,10 @@ img {
   background: #ffffff;
   padding: 10px 15px;
   border-radius: 10px;
+  transition: 0.5s;
+}
+.txt .web:hover {
+  background: #222;
 }
 
 .main_home::before {
